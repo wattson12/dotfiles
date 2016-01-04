@@ -121,3 +121,8 @@ autocmd VimEnter * wincmd p
 
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+map <leader>b :CtrlP <enter>
+
